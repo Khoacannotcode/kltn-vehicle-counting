@@ -1,0 +1,39 @@
+{
+    "name": "value",
+    "type": "record",
+    "fields": 
+    [   
+        {
+            "name": "track_id",
+            "type": "int"
+        },
+        {
+            "name": "frame_id",
+            "type": {
+                "type": "array",
+                "items": "int"
+            }
+        },
+        {
+            "name" : "bbox",
+            "type" : {
+                "type": "array",
+                "items": {
+                    "type": "array",
+                    "items": "int"
+                }
+            }
+        },
+        {
+            "name": "class",
+            "type": {
+                "type": "array",
+                "items": "int"
+            }
+        },
+        {
+            "name": "moi_id",
+            "type": "int"
+        }
+    ]
+}
